@@ -94,3 +94,8 @@ h6 {
   text-decoration: none;
   color: inherit;
 }
+
+#hero {
+  background-image: url('./assets/bg01.png');
+  background-size: cover;
+}
