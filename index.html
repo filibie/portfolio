@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +16,17 @@
         html {
             scroll-behavior: smooth;
         }
+
         /* Ensures each section takes up at least the full viewport height */
         .fullscreen-section {
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding-top: 80px; /* Prevents sticky navbar from overlapping content */
+            padding-top: 80px;
+            /* Prevents sticky navbar from overlapping content */
             padding-bottom: 40px;
         }
+
         /* Fixed image height for project cards */
         .card-img-top {
             height: 200px;
@@ -30,13 +34,15 @@
         }
     </style>
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbarNav">
 
     <!-- Sticky Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#hero"><i class="bi bi-terminal px-2"> </i>~/.filibie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -51,18 +57,21 @@
     </nav>
 
     <!-- Hero / Welcome Section -->
-    
+
     <section id="hero" class="fullscreen-section bg-dark text-light text-center text-sm-start">
         <div class="container z-10">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
                     <h1 class="display-2 fw-bold font-mono">Hi, I'm <span class="text-primary">Filip</span></h1>
-                    <p class="lead my-4">A dedicated Backend Engineer specializing in building robust, high-performance server-side architectures with Java and Spring Boot.</p>
+                    <p class="lead my-4">A dedicated Backend Engineer specializing in building robust, high-performance
+                        server-side architectures with Java and Spring Boot.</p>
                     <a href="#projects" class="btn btn-primary btn-lg me-2">View My Work</a>
                     <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
                 </div>
-                <div class="d-none d-sm-block ps-5">
-                    <i class="bi bi-cup-hot text-primary" style="font-size: 10rem;"></i>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <img src="./assets/profile.png" 
+                        class="img-fluid hero-profile-img border border-3 border-primary shadow-lg" 
+                        alt="John's Profile Photo">
                 </div>
             </div>
         </div>
@@ -75,8 +84,12 @@
             <div class="row align-items-center g-5">
                 <div class="col-md-6">
                     <h2 class="display-5 fw-bold mb-4">About Me</h2>
-                    <p class="lead">I thrive on solving complex backend problems, optimizing database queries, and designing scalable microservices that keep applications running smoothly under heavy loads.</p>
-                    <p>My primary focus is the Java ecosystem, where I leverage frameworks like Spring Boot and Hibernate to write clean, maintainable, and highly efficient code. Beyond core application logic, I enjoy containerizing services with Docker and ensuring local infrastructure mirrors production environments seamlessly</p>
+                    <p class="lead">I thrive on solving complex backend problems, optimizing database queries, and
+                        designing scalable microservices that keep applications running smoothly under heavy loads.</p>
+                    <p>My primary focus is the Java ecosystem, where I leverage frameworks like Spring Boot and
+                        Hibernate to write clean, maintainable, and highly efficient code. Beyond core application
+                        logic, I enjoy containerizing services with Docker and ensuring local infrastructure mirrors
+                        production environments seamlessly</p>
                     <div class="mt-4">
                         <span class="badge bg-secondary py-2 px-3">Java</span>
                         <span class="badge bg-secondary py-2 px-3">Spring</span>
@@ -88,15 +101,21 @@
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 bg-white border rounded shadow-sm">
-                        <h4 class="fw-bold mb-3"><i class="bi bi-briefcase-fill text-primary me-2"></i>Experience Baseline</h4>
+                        <h4 class="fw-bold mb-3"><i class="bi bi-briefcase-fill text-primary me-2"></i>Experience
+                            Baseline</h4>
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                                <strong>Software Engineer</strong> @ Self Employed <small class="text-muted">(2023 - Present)</small>
-                                <p class="text-muted mb-0">Architected and deployed full-stack web applications for SMB clients using Spring Boot and React, ensuring responsive design and SEO optimization.</p>
+                                <strong>Software Engineer</strong> @ Self Employed <small class="text-muted">(2023 -
+                                    Present)</small>
+                                <p class="text-muted mb-0">Architected and deployed full-stack web applications for SMB
+                                    clients using Spring Boot and React, ensuring responsive design and SEO
+                                    optimization.</p>
                             </li>
                             <li>
-                                <strong>Custom Software Engineering Analyst</strong> @ Accenture <small class="text-muted">(2022 - 2023)</small>
-                                <p class="text-muted mb-0">Developed custom features and maintained existing code for a retail Point of Sale application with Salesforce integration.</p>
+                                <strong>Custom Software Engineering Analyst</strong> @ Accenture <small
+                                    class="text-muted">(2022 - 2023)</small>
+                                <p class="text-muted mb-0">Developed custom features and maintained existing code for a
+                                    retail Point of Sale application with Salesforce integration.</p>
                             </li>
                         </ul>
                     </div>
@@ -113,11 +132,69 @@
                 <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center card-img-top">
-                            <i class="bi bi-house-gear" style="font-size: 4rem;"></i>
-                        </div>
+                        <!-- <i class="bi bi-house-gear" style="font-size: 4rem;"></i> -->
+                        <img class="card-img-top project-img" src="./assets/esp8266.jpeg" />
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Smart Home Docker Instance</h5>
+                            <h5 class="card-title fw-bold">Smart Home IoT Application</h5>
+                            <p class="card-text">A self-hosted Spring Boot application for collecting and visualizing
+                                sensor data from ESP8266/ESP32
+                                devices. Features:
+                                REST API for storing sensor readings (temperature, humidity, light, etc.).
+                                PostgreSQL backend with support for raw data and time-bucketed aggregation.
+                                Grafana integration for dashboards and visualization.
+                                Configurable alerts via Discord webhooks (thresholds stored in DB).
+                                API key authentication for devices.
+                                Systemd service support for easy deployment on Linux servers.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="https://github.com/filibie/homeiotserver" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top project-img" src="./assets/shopping-cart-demo.gif">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Full-Stack E-Commerce Application</h5>
+                            <p class="card-text">A responsive full-stack web application demonstrating modern UI states and secure state sync. Features:
+                                Single Page Application architecture built with React, Hooks, and functional routing.
+                                Java Spring Boot backend handling RESTful API endpoints for inventory and orders.
+                                Secure JSON Web Token (JWT) user authentication and state management.
+                                Real-time shopping cart synchronization with a persistent relational database.
+                                Fully simulated payment checkout workflow processing mock transactional lifecycles.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="https://github.com/filibie/react-shopping-cart" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top project-img" src="./assets/godot.png">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">2D Action-Platformer Game</h5>
+                            <p class="card-text">An optimized 2D game built using the Godot Engine, focusing on state machines and clean code architecture. Features:
+                                Modular GDScript codebase leveraging custom nodes for component reusability.
+                                Finite State Machine (FSM) controlling player physics, acceleration, and animations.
+                                Dynamic tilemaps with runtime layer loading and integrated 2D collision parsing.
+                                Custom event bus engine handling signal distribution for UI layers and audio cues.
+                                Optimized cross-platform compilation pipelines targeting smooth desktop distributions.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="https://github.com/filibie/godot-first-game" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row g-4 my-3">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top project-img" src="./assets/grafana.png"/>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Smart Home IoT Application</h5>
                             <p class="card-text">Containerized Home Assistant deployment managing IoT components locally with low overhead and automated backup cron jobs.</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
@@ -125,29 +202,23 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="bg-dark text-white d-flex align-items-center justify-content-center card-img-top">
-                            <i class="bi bi-cpu" style="font-size: 4rem;"></i>
-                        </div>
+                        <img class="card-img-top project-img" src="./assets/shopping-cart-demo.gif">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Low-Spec System Optimization</h5>
-                            <p class="card-text">A custom configuration script leveraging compressed RAM swap modules (zram) to make older 1GB machines perfectly usable.</p>
+                            <h5 class="card-title fw-bold">freeCodeCamp, Odin and React projects</h5>
+                            <p class="card-text">Completed many fcc and Odin projects using JavaScript, Python, React</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
                             <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="bg-primary text-white d-flex align-items-center justify-content-center card-img-top">
-                            <i class="bi bi-router" style="font-size: 4rem;"></i>
-                        </div>
+                        <img class="card-img-top project-img" src="./assets/godot.png">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Wireless Bridge Integration</h5>
+                            <h5 class="card-title fw-bold">2D Platformer Game in Godot Engine</h5>
                             <p class="card-text">Configured a seamless wireless-to-wired bridge using advanced router firmware to expand strict local topology layouts.</p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
@@ -155,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -166,7 +237,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="list-group shadow-sm">
-                        <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                        <div
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-patch-check-fill text-success fs-3 me-3"></i>
                                 <div>
@@ -176,7 +248,8 @@
                             </div>
                             <span class="badge bg-primary rounded-pill">2025</span>
                         </div>
-                        <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                        <div
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-patch-check-fill text-success fs-3 me-3"></i>
                                 <div>
@@ -186,7 +259,8 @@
                             </div>
                             <span class="badge bg-primary rounded-pill">2024</span>
                         </div>
-                        <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+                        <div
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-patch-check-fill text-success fs-3 me-3"></i>
                                 <div>
@@ -216,11 +290,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-semibold">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label fw-semibold">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Let's build something awesome together..." required></textarea>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Let's build something awesome together..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
                         </form>
@@ -236,14 +312,16 @@
     </footer>
 
     <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
-    integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
-    integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
