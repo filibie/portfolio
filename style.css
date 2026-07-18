@@ -82,6 +82,6 @@ h6 {
   object-fit: cover;
 }
 
-.my-photo {
-  max-width: 40%;
+.img-profile {
+  border-radius: var(--bs-border-radius-lg);
 }
