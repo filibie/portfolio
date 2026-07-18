@@ -85,3 +85,8 @@ h6 {
 .img-profile {
   border-radius: var(--bs-border-radius-lg);
 }
+
+#certifications a {
+  text-decoration: none;
+  color: inherit;
+}
